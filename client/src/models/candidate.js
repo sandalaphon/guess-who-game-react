@@ -32,7 +32,7 @@ var Candidate = function(name, url){
     beard: false
 
   }
-  this.other_attributes={
+  this.other={
     glasses: false, 
     ear_rings: false, 
     female: false

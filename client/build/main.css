@@ -9,29 +9,113 @@
   margin: 0 auto;
 }
 
+.guess {
+  display:block;
+  margin-right: 0 auto;
+  height:40px;
+  text-align: center;
+  padding: 20px;
+}
+
+.guess_button {
+  display: inline-block;
+   padding: 10px 15px;
+   font-size: 20px;
+   cursor: pointer;
+   text-align: center;
+   text-decoration: none;
+   outline: none;
+   color: #fff;
+   background-color: #4CAF50;
+   border: none;
+   border-radius: 15px;
+   box-shadow: 0 9px #999;
+}
+
+.guess_button:hover {background-color: #3e8e41}
+
+.guess_button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.select_button {
+  display: inline-block;
+   padding: 10px 15px;
+   font-size: 20px;
+   cursor: pointer;
+   text-align: center;
+   text-decoration: none;
+   outline: none;
+   color: #fff;
+   background-color: #4CAF50;
+   border: none;
+   border-radius: 15px;
+   box-shadow: 0 9px #999;
+}
+
+.select_button:hover {background-color: #3e8e41}
+
+.select_button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+#pick_a_trait {
+  width: 200px;
+  margin-right: 25px;
+  text-align: center;
+  background-color: #3e8e41; 
+  font-weight: bold; 
+  font-size: 20px;
+  color: white;
+}
+
+#fifty_fifty {
+   width: 200px;
+   margin-right: 25px;
+   text-align: center; 
+   background-color: #3e8e41; 
+   font-weight: bold; 
+   font-size: 20px;
+   color: white;
+  
+}
+
+#make_a_guess{
+  /*display:block;*/
+  margin: 0 auto;
+  text-align: center;
+  margin-right: 25px;
+  width: 200px;
+  text-align: center; 
+  background-color: #3e8e41; 
+  font-weight: bold; 
+  font-size: 20px;
+  color: white;
+}
+
 .dropdowns {
   display:block;
-  margin: 0 auto;
-  height:75px;
+  margin-right: 0 auto;
+  height:50px;
   text-align: center;
+  padding: 20px;
 }
 
 .card_container{
   display:block;
-  height:150px;
+  height:300px;
   text-align: center;
   list-style-type: none;
       margin: 0;
       padding: 0;
-      overflow: hidden;
+      /*overflow: hidden;*/
 }
 
-#make_a_guess{
-  display:block;
-  margin: 0 auto;
-  height:40px;
-  text-align: center;
-}
+
 
 .win_lose{
   display:block;

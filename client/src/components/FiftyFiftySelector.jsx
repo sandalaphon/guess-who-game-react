@@ -2,23 +2,37 @@ import React from 'react';
 
 class FiftyFiftySelector extends React.Component {
 
+  constructor(props){
+    super(props)
+    this.handleChange = this.handleChange.bind(this)
+  }
+
+  handleChange(event){
+
+    const trait = this.props.traits[this.props.selected][event.target.value]
+    console.log("trait", trait)
+    console.log("props.selected", this.props.selected)
+    this.props.setSubTrait(trait)
+  }
+
+
   render() {
     var selected = this.props.selected
-    console.log("selected",selected)
-    console.log("selected",this.props.traits[selected])
     var options = this.props.traits[selected].map((trait, index)=>{
      return(
-        <option key={index}>
-          {trait}
+        <option value = {index}  key = {index}>
+            {trait}
         </option>
-    )
+        )
      
     })
 
-    console.log("50/50", this.props.selected)
     return (
-      <select id="fifty_fifty">
+      <select id = "fifty_fifty"  
+      onChange   = {this.handleChange} >
+
         {options}
+
       </select>
     );
   }
