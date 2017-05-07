@@ -2,12 +2,6 @@ import React from 'react';
 
 class MakeAGuessSelector extends React.Component {
 
-  // handleChange(event){
-  //   var guess = event.target.value
-  //   this.props.victory_attempt(guess)
-  // }
-  // onChange= {this.handleChange.bind(this)}
-
   handleClick(){
     var guess = document.querySelector("#make_a_guess")
     this.props.victory_attempt(guess.value)

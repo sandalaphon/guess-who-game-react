@@ -17,7 +17,6 @@ class CardContainer extends React.Component{
   }
 
 render(){
-  console.log(this.state.cardfront)
   const cardNodes = this.props.candidates.map((candidate, index)=>{
   var classfront = ""
   var classback = ""

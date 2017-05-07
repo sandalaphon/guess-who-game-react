@@ -38,6 +38,7 @@ class GuessWhoContainer extends React.Component {
       anita.other.female                    =true
     var anne = new Candidate("Anne", 'https://i2.wp.com/www.fullbellylaughs.com/wp-content/uploads/2016/12/Anne.png')
       anne.hair_style.curly_hair            =true
+      anne.hair_style.hair_partition        =true
       anne.hair_colour.black                =true
       anne.other.ear_rings                  =true
       anne.other.female                     =true
@@ -86,6 +87,7 @@ class GuessWhoContainer extends React.Component {
 
       var frans = new Candidate("Frans", "https://i1.wp.com/www.fullbellylaughs.com/wp-content/uploads/2017/01/Frans.png")
       frans.hair_style.curly              =true
+      frans.hair_style.hair_partition     =true
       frans.hair_colour.ginger            =true
 
       var philip = new Candidate("Philip", "https://i1.wp.com/www.fullbellylaughs.com/wp-content/uploads/2017/01/Phillip.png")
@@ -186,9 +188,6 @@ class GuessWhoContainer extends React.Component {
     };
 
     victory_attempt(name){
-      console.log("name input", name)
-      console.log("this.state.computerChoice.name", this.state.computerChoice.name)
-      console.log(name===this.state.computerChoice.name)
       
       if(this.state.computerChoice.name===name){
         this.setState({victory: true})

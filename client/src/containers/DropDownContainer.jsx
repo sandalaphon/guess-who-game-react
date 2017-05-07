@@ -41,7 +41,6 @@ handleClick(){
     }
   })
  }
- console.log('here')
   this.props.update_remaining()
 }
 
