@@ -28,6 +28,7 @@ class GuessWhoContainer extends React.Component {
       alfred.facial_attributes.sad_looking  =true
       alfred.facial_hair.has_facial_hair    =true
       alfred.facial_hair.moustache          =true
+      alfred.facial_attributes.big_nose     =true
     var anita = new Candidate("Anita", 'https://i2.wp.com/www.fullbellylaughs.com/wp-content/uploads/2016/12/Anita.png')
       anita.hair_style.hair_partition       =true
       anita.hair_style.hair_stuff           =true
@@ -84,6 +85,7 @@ class GuessWhoContainer extends React.Component {
       eric.hair_style.hat                 =true
       eric.hair_colour.blond              =true
       eric.facial_attributes.big_mouth    =true
+      eric.facial_attributes.big_nose     =true
 
       var frans = new Candidate("Frans", "https://i1.wp.com/www.fullbellylaughs.com/wp-content/uploads/2017/01/Frans.png")
       frans.hair_style.curly              =true
@@ -110,6 +112,7 @@ class GuessWhoContainer extends React.Component {
       richard.facial_hair.has_facial_hair = true
       richard.facial_hair.moustache       = true
       richard.facial_hair.beard           = true
+      richard.facial_attributes.big_mouth = true
 
       var maria = new Candidate("Maria", "https://i1.wp.com/www.fullbellylaughs.com/wp-content/uploads/2017/01/Maria.png")
       maria.hair_style.hat                = true
@@ -160,7 +163,8 @@ class GuessWhoContainer extends React.Component {
       var herman = new Candidate("Herman", "https://i2.wp.com/www.fullbellylaughs.com/wp-content/uploads/2017/01/Herman.png")
       herman.hair_style.bald              = true
       herman.hair_colour.ginger           = true
-      herman.facial_attributes.big_mouth  = true
+      herman.facial_attributes.big_nose   = true
+
 
       var joe = new Candidate("Joe", "https://i2.wp.com/www.fullbellylaughs.com/wp-content/uploads/2017/01/Joe.png")
       joe.hair_colour.blond               = true
