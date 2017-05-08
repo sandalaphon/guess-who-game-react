@@ -47,14 +47,13 @@ class GuessWhoContainer extends React.Component {
       bernard.hair_style.hair_stuff         =true
       bernard.hair_colour.brown             =true
       bernard.facial_attributes.big_nose    =true
-      bernard.facial_attributes.sad_looking =true
-      var bill = new Candidate("Bill", 'https://i2.wp.com/www.fullbellylaughs.com/wp-content/uploads/2016/12/Bill.png')
+    var bill = new Candidate("Bill", 'https://i2.wp.com/www.fullbellylaughs.com/wp-content/uploads/2016/12/Bill.png')
       bill.hair_style.bald                 =true
       bill.hair_colour.ginger              =true
       bill.facial_attributes.red_cheeks    =true
       bill.facial_hair.has_facial_hair     =true
       bill.facial_hair.beard               =true
-      var charles = new Candidate("Charles", 'https://i0.wp.com/www.fullbellylaughs.com/wp-content/uploads/2016/12/Charles.png')
+    var charles = new Candidate("Charles", 'https://i0.wp.com/www.fullbellylaughs.com/wp-content/uploads/2016/12/Charles.png')
       charles.hair_style.hair_partition    =true
       charles.hair_colour.blond            =true
       charles.facial_attributes.big_mouth  =true
@@ -74,6 +73,7 @@ class GuessWhoContainer extends React.Component {
       david.facial_attributes.big_nose    =true
       david.facial_hair.has_facial_hair   =true
       david.facial_hair.beard             =true
+      david.hair_style.hair_partition     =true
 
       var sam = new Candidate("Sam", "https://i2.wp.com/www.fullbellylaughs.com/wp-content/uploads/2017/01/Sam.png")
       sam.hair_style.bald                 =true
@@ -89,6 +89,7 @@ class GuessWhoContainer extends React.Component {
       frans.hair_style.curly              =true
       frans.hair_style.hair_partition     =true
       frans.hair_colour.ginger            =true
+      frans.facial_attributes.big_nose    =true
 
       var philip = new Candidate("Philip", "https://i1.wp.com/www.fullbellylaughs.com/wp-content/uploads/2017/01/Phillip.png")
       philip.hair_colour.black            = true
@@ -115,6 +116,7 @@ class GuessWhoContainer extends React.Component {
       maria.hair_style.hair_stuff         = true
       maria.hair_colour.brown             = true
       maria.other.ear_rings               = true
+      maria.other.female                  = true
 
       var paul = new Candidate("Paul", "https://i0.wp.com/www.fullbellylaughs.com/wp-content/uploads/2017/01/Paul.png")
       paul.hair_style.hair_partition      = true
@@ -148,6 +150,7 @@ class GuessWhoContainer extends React.Component {
       susan.facial_attributes.red_cheeks  = true
       susan.facial_attributes.big_mouth   = true
       susan.other.ear_rings               = true
+      susan.other.female                  = true
 
       var tom = new Candidate("Tom", "https://i0.wp.com/www.fullbellylaughs.com/wp-content/uploads/2016/12/Tom.png")
       tom.hair_style.bald                 = true
@@ -211,8 +214,8 @@ class GuessWhoContainer extends React.Component {
         <img src = "http://cdn.toy-tma.com/wp-content/uploads/2016/03/HA5696-500x336.jpg" 
         className="logo"/>
         <CardContainer 
-        candidates = {this.state.candidates} 
-        remaining  = {this.state.candidates_remaining} />
+        candidates       = {this.state.candidates} 
+        remaining        = {this.state.candidates_remaining} />
         <DropDownContainer 
         traits           = {this.state.traits}
         candidates       = {this.state.candidates} 
